@@ -8,7 +8,7 @@ function change(){
     let hex = document.getElementById("hex")
 
    for(let i = 0; i < 6; i++){
-        color = color + values[Math.floor(Math.random() * 16)];
+        color = color + values[Math.floor(Math.random() * values.length)];
     }
     hex.innerText = color;
     document.body.style.backgroundColor = color
